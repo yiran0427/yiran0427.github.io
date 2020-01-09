@@ -256,7 +256,6 @@ body {
   min-height: 100%
 }
 
-/* Style the navigation bar */
 .bottom-bar {
   background-color: #727272;
   width: 26%;
@@ -267,9 +266,9 @@ body {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   bottom: 0;
+  border-radius: 8px;
 }
 
-/* Navbar links */
 .bottom-bar a {
   text-align: center;
   padding: 10px 10px 10px;
@@ -278,7 +277,6 @@ body {
   font-size: 15px;
 }
 
-/* Navbar links on mouse-over */
 .bottom-bar a:hover {
   background-color: #000;
 }
