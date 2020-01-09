@@ -1,0 +1,284 @@
+html {
+    min-height: 100%;/* make sure it is at least as tall as the viewport */
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("img/parallax.jpg");
+
+  /* Full height */
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.greeting {
+  margin: auto;
+  padding: 100px;
+  padding-bottom: 50px;
+  font-size: 40px;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.parallax li {
+  list-style: none;
+}
+
+.parallax a {
+  margin: auto;
+  color: #433C4E;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.parallax a span {
+  position: absolute;
+  top: 620px;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #433C4E;
+  border-bottom: 1px solid #433C4E;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+.about {
+  padding-top: 30px;
+  height: 100vh;
+}
+
+.title-picture {
+  width: 400px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.wrapper {
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
+
+.about-left {
+  flex: 40%;
+  margin-right: 20px;
+}
+
+.about-right {
+  flex: 60%;
+  font-size: 15px;
+  text-align: left;
+  line-height: 200%;
+}
+
+.name {
+  margin-bottom: 2px;
+}
+
+.skills {
+  text-align: left;
+}
+
+.skills a {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: lightgrey;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.skills a:hover {
+  background-color: grey;
+}
+
+.social-links {
+  padding-left: 100px;
+}
+
+.social-links a {
+  margin: 10px;
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.social-links a:hover {
+  opacity: 0.7;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #0E76A8;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  color: white;
+}
+
+/* Style the navigation bar */
+.navbar {
+  background-color: #727272;
+  width: 100%;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+/* Navbar links */
+.navbar a {
+  text-align: center;
+  margin: auto;
+  padding: 10px 60px 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #4CAF50;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+.experience, .projects {
+  padding-top: 30px;
+  -webkit-align-items: center; /* Safari 7.0+ */
+  align-items: center;
+}
+
+.experience {
+}
+
+.projects {
+}
+
+.section-title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 30px;
+}
+
+.single-element{
+  width: 60%;
+  margin: auto;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.left{
+  flex: 20%;
+}
+
+.right{
+  flex: 80%;
+}
+
+.contact {
+  min-height: 100%
+}
+
+/* Style the navigation bar */
+.bottom-bar {
+  background-color: #727272;
+  width: 26%;
+  margin: auto;
+  margin-right: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
+}
+
+/* Navbar links */
+.bottom-bar a {
+  text-align: center;
+  padding: 10px 10px 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Navbar links on mouse-over */
+.bottom-bar a:hover {
+  background-color: #000;
+}
