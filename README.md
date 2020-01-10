@@ -1,2 +1,3 @@
 # yiran0427.github.io
-My personal website
+
+Click here to view my personal website https://yiran0427.github.io
