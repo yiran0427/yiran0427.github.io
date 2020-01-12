@@ -238,18 +238,24 @@ body {
 }
 
 .single-element{
-  width: 60%;
+  align-items: center;
+  width: 70%;
   margin: auto;
   display: flex;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 .left {
-  flex: 20%;
+  flex: 30%;
+}
+
+.projectsgif{
+  width: 50vh;
+  border-radius: 8px;
 }
 
 .right {
-  flex: 80%;
+  flex: 70%;
   margin-left: 50px;
   text-align: left;
   line-height: 150%;
